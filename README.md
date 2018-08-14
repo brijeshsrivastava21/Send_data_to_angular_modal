@@ -2,3 +2,4 @@
 # Features-
   A). Add Dynamically Arguments in parent .
   B). Send Arguments to the modal.
+  C). Demo Link also avaliable.
