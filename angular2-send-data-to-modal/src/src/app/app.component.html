@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="form-group" *ngFor="let p of param.arguments;let i=index;">
+		<fieldset>
+			<legend>Argument-{{i+1}}</legend>
+			<label for="name">Name:</label>
+			<input type="text" [(ngModel)]="p.name" class="form-control" id="name" value="{{p.name}}">
+			<label for="Age">Age[0-99]:</label>
+			<input type="range" class="custom-range" [(ngModel)]="p.age" class="form-control" id="value" value="{{p.age}}" min="0" max="99">Selected:[{{p.age}}]
+		</fieldset>
+    <hr>
+	</div>
+
+
+	<button class="btn btn-primary" (click)="addArguments()">Add More Params</button> &nbsp;&nbsp;
+	<button class="btn btn-primary" (click)="openPopup()">send to modal</button>
+  
+
+</div>
